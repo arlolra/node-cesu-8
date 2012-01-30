@@ -20,7 +20,7 @@ But clearly something can be done 'cause the browser is working around the probl
 To do the encoding, I looked at:
 http://www.unicode.org/reports/tr26/
 
-This library shows that you can take a UTF-8 encoded buffer, convert it to UTF-16 with [node-iconv](https://github.com/bnoordhuis/node-iconv) and then build a string with the surrogate pairs. There are a few issues with this, `String.length` will be one longer than expected, but that's the way it should work and does in the browser. But otherwise parsing JSON, the original use case, will be fine.
+This library shows that you can take a UTF-8 encoded buffer, convert it to UTF-16 with [node-iconv](https://github.com/bnoordhuis/node-iconv) and then build a string with the surrogate pairs. There are a few issues with this, `String.length` will be one longer per non-BMP character than expected, but that's the way it should work and does in the browser. But otherwise parsing JSON, the original use case, will be fine.
 
 This can probably be done purely in Javascript, ie. no libiconv, or even pushed down to C++, as a new encoding, CESU-8.
 
