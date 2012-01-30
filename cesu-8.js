@@ -1,6 +1,6 @@
 // http://www.unicode.org/reports/tr26/
 
-const Iconv = require('iconv').Iconv
+var Iconv = require('iconv').Iconv
 
 
 // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/fromCharCode
