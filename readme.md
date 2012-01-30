@@ -1,9 +1,9 @@
-CESU-8 Encoding for Node.js
-===========================
+#CESU-8 Encoding for Node.js
 
 
-An Explanation
---------------
+###An Explanation
+
+---
 
 At the moment, Node is punting on non-BMP unicode characters. What to do?
 
@@ -27,16 +27,18 @@ This library shows that you can take a UTF-8 encoded buffer, convert it to UTF-1
 This can probably be done purely in Javascript, ie. no libiconv, or even pushed down to C++, as a new encoding, CESU-8.
 
 
-Install
--------
+###Install
+
+---
 
 With everyone's favourite package manager,
 
     npm install cesu-8
 
 
-Example Usage
--------------
+###Example Usage
+
+---
 
     var cesu = require('cesu-8')
 
@@ -59,8 +61,9 @@ Example Usage
     process.stdout.write(backtobuf)
 
 
-Todo
-----
+###Todo
+
+---
 
 - Find out what the first char is: `0xFFEF`
 - Remove iconv dependency.
