@@ -43,6 +43,12 @@ for (; i < len; i++) {
 
 
 
+// we now have a string that we can do whatever with
+// and should be fine. no different than in the browser.
+// when you're done with it, convert it back to utf-8
+
+
+
 // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/charCodeAt
 
 function fixedCharCodeAt(str, idx) {
