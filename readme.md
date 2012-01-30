@@ -3,8 +3,6 @@
 
 ###An Explanation
 
----
-
 At the moment, Node is punting on non-BMP unicode characters. What to do?
 
 An unsatisfactory workaround was to manually do the unwinding, as proposed here:
@@ -29,16 +27,12 @@ This can probably be done purely in Javascript, ie. no libiconv, or even pushed 
 
 ###Install
 
----
-
 With everyone's favourite package manager,
 
     npm install cesu-8
 
 
 ###Example Usage
-
----
 
     var cesu = require('cesu-8')
 
@@ -62,8 +56,6 @@ With everyone's favourite package manager,
 
 
 ###Todo
-
----
 
 - Find out what the first char is: `0xFFEF`
 - Remove iconv dependency.
