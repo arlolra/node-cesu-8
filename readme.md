@@ -1,5 +1,10 @@
 #CESU-8 Encoding for Node.js
 
+***
+
+_Warning: As of Node.js v0.7.7 this is no longer necessary!_
+
+***
 
 ###An Explanation
 
