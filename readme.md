@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/arlolra/node-cesu-8.png)](http://travis-ci.org/arlolra/node-cesu-8)
 #CESU-8 Encoding for Node.js
 
 ***
@@ -41,7 +42,7 @@ With everyone's favourite package manager,
 
     var cesu = require('cesu-8')
 
-    // emoji 🍨 🍩 🍪
+    // emoji � � �
     var arr = [
       101, 109, 111, 106, 105, 32, 240, 159, 141, 168,
       32, 240, 159, 141, 169, 32, 240, 159, 141, 170
